@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <style>
+    
     #top-section{
       
         display: grid;
@@ -63,14 +64,42 @@ width:20%
 #options{
     display: grid;
     grid-template-columns: repeat(9,1fr);
-  
+  width: 88%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
     
 }
-#options>p{
-    font-size:98%;
-    color:rgb(87, 84, 84);
+#options>div{
+    font-size: 16px;
+    width:200%;
+    color:rgb(69, 67, 67);
+    font-weight: lighter;
  
 }
+#options>div:nth-child(3){
+    margin-left:-80px
+}
+#options>div:nth-child(2){
+    margin-left:-30px
+}
+#options>div:nth-child(5){
+    margin-left:-20px
+}
+#options>div:nth-child(6){
+    margin-left:-30px
+}
+#options>div:nth-child(7){
+    margin-left:40px
+}
+#options>div:nth-child(8){
+    margin-left:40px
+}
+#options>div:nth-child(9){
+color: red;
+}
+
 #heading{
     background-color: black;
     height:30px;
@@ -131,10 +160,13 @@ padding-top: 13px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     margin-top: 21px;
+    gap:5px;
+    margin-left: 28px;
+    margin-right: 20px;
    
 }
 #discount>div>img{
-    width:500px;
+    width:475px;
     height: 430px;
 }
 #first{
@@ -325,7 +357,181 @@ padding-top: 13px;
 }
 
 
-@media all and (min-width:481px) and (max-width:768px){
+
+hr{
+    margin-top: 42px;
+}
+#shop-by-category>h1{
+    text-align: center;
+    font-size: 35px;
+    font-weight:lighter;
+}
+#shop-by-category{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,auto);
+    margin-top: 35px;
+}
+#shop-by-category>div{
+    margin: auto;
+ 
+}
+#shop-by-category>div>img{
+height:80%;
+width:180px
+}
+#h1>h1{
+    text-align: center;
+    font-size: 38px;
+    font-weight: lighter;
+}
+#shop-by-category>div>p{
+    text-align: center;
+}
+#shop-by-category>div:nth-child(2){
+margin-top: 100px;
+}
+#shop-by-category>div:nth-child(3){
+margin-top: 87px;
+}
+#shop-by-category>div:nth-child(5){
+margin-top: 100px;
+}
+#shop-by-category>div:nth-child(7){
+margin-top: 70px;
+}
+#shop-by-category>div:nth-child(9){
+margin-top: 60px;
+}
+#shop-by-category>div:nth-child(10){
+margin-top: 60px;
+}
+#mid-slider{
+    position:relative;
+}
+#mid-slider>h1{
+  
+  width:100%;
+  position: absolute;
+  top: 100px;
+          left: 30%;
+          color: white;
+          font-size: 65px;
+}
+#mid-slider>p{
+  position: absolute;
+  top: 190px;
+          left: 26%;
+          color: white;
+          font-size: 23px;
+}
+
+#mid-slider>img{
+    height:470px;
+    width:100%;
+}
+#mid-slider>button:nth-child(4){
+    position: absolute;
+    top: 260px;
+            left: 44%;
+            color: black;
+            font-size: 23px;
+            background-color: white;
+            border: 0px;
+}
+#mid-slider>button:nth-child(5){
+    position: absolute;
+    top: 180px;
+      left: 0px;    
+            color: black;
+            font-size: 23px;
+            background-color: white;
+            border: 0px;
+}
+#mid-slider>button:nth-child(6){
+    position: absolute;
+    top: 180px;
+            left: 98%;
+            color: black;
+            font-size: 23px;
+            background-color: white;
+            border: 0px;
+}
+#new-arrival-h1{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 18px;
+}
+#new-arrival-h1>button{
+    width:120px;
+    height: 40px;
+
+    background-color: white;
+    border-width: 0.2px;
+    border-color: rgb(242, 238, 238);
+}
+#new-arrival-section{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    padding-top: 30px;
+    margin-left: 60px;
+    margin-right: 50px;
+}
+#new-arrival-section>div>p{
+    text-align: center;
+}
+#new-arrival-section>div>h4{
+   display: inline;
+   margin-left: 10px;
+}
+#new-arrival-section>div>img{
+    width:277px;
+    height: 300px;
+}
+#trendinh1{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 18px;
+}
+#trending-section{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,auto);
+    padding-top: 30px;
+    margin-left: 60px;
+    margin-right: 50px;
+}
+#trending-section>div>p{
+    text-align: center;
+}
+#trending-section>div>h4{
+   display: inline;
+   margin-left: 10px;
+}
+#trending-section>div>img{
+    width:277px;
+    height: 300px;
+}
+#trending-btn>button{
+   
+    width:130px;
+    height:45px;
+  margin-top: 25px;
+   background-color: black;
+   color: white;
+   font-size: large;
+   font-weight: bold;
+}
+#trending-btn{
+    width:130px;
+    margin: auto
+    
+}
+#trending-section>div{margin-top: 20px;
+
+}
+/* small screen media querries */
+@media all and (min-width:481px) and (max-width:988px){
     #discount{
     display: grid;
  
@@ -346,16 +552,124 @@ padding-top: 13px;
 #crouser>button:nth-child(4){
     top:320px
 }
+#shop-by-category{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,auto);
+    margin-top: 35px;
 }
+#new-arrival-section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,auto);
+    padding-top: 30px;
+    margin-left: 60px;
+    margin-right: 50px;
+}
+#trending-section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,auto);
+    padding-top: 30px;
+    margin-left: 60px;
+    margin-right: 50px;
+}
+#options>div{
+font-size: 0px;
+}
+#options{
+    margin-top: -20px;
+}
+}
+/* small screen media querries */
+@media all and (min-width:200px) and (max-width:480px){
+    
+    #discount{
+    display: grid;
+ 
+    grid-template-columns: repeat(1,100%);
+    grid-template-rows: repeat(3,500px);
+    margin-top: 10px;
+   
+}
+#discount>div{
+ margin-left: 50px;
+}
+#crouser>p{
+    top:220px
+}
+#crouser>h1{
+    top:40px
+}
+#crouser>button:nth-child(4){
+    top:320px
+}
+#h1>h1{
+   margin-left: 5px;
+   
+}
+#shop-by-category{
+    display: grid;
+ 
+    grid-template-columns: repeat(2,80%);
+    grid-template-rows: repeat(5,auto);
+    margin-top: 35px;
 
-
+}
+#new-arrival-h1{
+    width:100px;
+    margin: auto;
+}
+#new-arrival-h1>h1{
+    width:300%;
+}
+#new-arrival-h1>button{
+    margin-left: 90px;
+}
+#new-arrival-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,auto);
+    
+   
+}
+#trendinh1{
+    width:350px;
+    margin-left: 110px;
+}
+#trending-btn{
+    width: 120px;
+    margin-left: 270px;
+}
+#trending-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(5,auto);
+ 
+}
+#mid-slider{
+    width:160%;
+}
+#crouser{
+    width:160%;
+}
+#heading{
+    width:160%
+}
+#options>div{
+font-size: 0px;
+}
+#options{
+    margin-top: -20px;
+}
+}
 </style>
 
 
 
 </head>
 <body>
-    
+  
 <div id="top-section">
     <div id="logo">
         <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?v=1574278243"/>
@@ -366,19 +680,20 @@ padding-top: 13px;
     </div> 
     </div>
     <div id="options"> 
-        <p  style="margin-left:35px">CLOTHING</p>
-        <p>SHOES</p>
-        <p style="width:200%;margin-left: -50px">HANDBAG & ACCESSORIES</p>
-        <p  style="margin-left:35px">DESIGNERS</p>
-        <p>SUNGLASSES</p>
-        <p>JEWELRY & WATCHES</p>
-        <p style="margin-left:35px">UNDER $50</p>
-        <p style="margin-left:20px">BEAUTY</p>
-        <p style="color:red;margin-right: 35px;">CLEARANCE</p>
+        <div  >CLOTHING</div>
+        <div>SHOES</div>
+        <div>HANDBAG & ACCESSORIES</div>
+        <div  >DESIGNERS</div>
+        <div>SUNGLASSES</div>
+        <div>JEWELRY & WATCHES</div>
+        <div >UNDER $50</div>
+        <div>BEAUTY</div>
+        <div >CLEARANCE</div>
     </div>
 
 
 </div>
+
 <!-- top heading on top of crouser -->
 <div id="heading">
 <p style="display:inline;color: white;">WELCOME TO BLUEFLY:   <h4 style="display:inline;color: white;">Luxury brands at discounted price</h4></p>
@@ -420,11 +735,38 @@ padding-top: 13px;
 </div>
 
 </div>
+<!-- Shop By Category Section -->
+<hr>
+<div id="h1"><h1>SHOP BY CATEGORY</h1></div>
+<div id="shop-by-category">
+
+
+</div>
+<!-- middle slider section -->
+<div id="mid-slider">
+    <img id="imgslider" src="https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c2xpZGVyJTIwc2hvcHBpbmclMjBpbWFnZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"/>
+    <h1 id="mid-sli-h">BOTTEGA VENETA</h1>
+    <p>UNSURPASSED CRAFTMANSHIP & SIGNATURE WOVEN LEATHER</p>
+    <button>SHOP NOW</button>
+    <button id="left1"><</button>
+    <button id="right1">></button>
+</div>
+<hr>
+<div id="new-arrival-h1"><h1>NEW ARRIVALS</h1>
+<button>VIEW ALL</button></div>
+<div id="new-arrival-section">
+</div>
+<hr>
+<!-- trending now section -->
+<div id="trendinh1"><h1>TRENDING NOW</h1></div>
+<div id="trending-section"></div>
+<div id="trending-btn"></div>
+<hr>
 </body>
 
 
 
-
+<!-- 1st slider script js code -->
 <script>
 let imageslink=["https://www.freepik.com/photos/shopping","https://media.istockphoto.com/photos/giggling-their-way-through-the-mall-picture-id1369227756?b=1&k=20&m=1369227756&s=170667a&w=0&h=q3PyY60D4dXdfFMeN8od0GNcxKAtgoKa_xId9_fg1E8=","https://media.istockphoto.com/photos/beautiful-asian-woman-carrying-colorful-bags-shopping-online-with-picture-id1193750118?k=20&m=1193750118&s=170667a&w=0&h=NYmLA3Q2ep1S37cMxpCujb66GOSLnDTXKb8V411ytWM="];
 
@@ -432,7 +774,7 @@ let rightbtn=document.querySelector("#right");
 let crauser=document.querySelector("#imgcrauser");
 let imgstate=0;
 rightbtn.addEventListener("click",function(){
-  
+ 
     imgstate++
     if(imgstate===imageslink.length-1){
         imgstate=0
@@ -451,6 +793,179 @@ leftbtn.addEventListener("click",function(){
  
     crauser.src=imageslink[imgstate];
 })
+// for automatic moving of images in slider
+function slider(){
+for(let i=0;i<imageslink.length;i++){
+   crauser.src=imageslink[i]
+}
+}
+setInterval(slider,3000)
+</script>
+<!-- creating 2nd script file for creating 10 div for shop by category section by js -->
+<script>
+let arr=[{img:"https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1620399165-best-amazon-dresses-for-women-peplum-teal-dress-1620399145.png?crop=0.7371167645140249xw:1xh;center,top&resize=480:*",name:"DRESSES"},
+{img:"https://dxkvlfvncvqr8.cloudfront.net/media/images/product/image/mj-1395-bkbk-1-1650951704.jpg",name:"PUMPS & HEELS"},
+{img:"https://m.media-amazon.com/images/I/71nQZ3BughL._UY500_.jpg",name:"HANDBAGS"},
+{img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLULkXgFXV8jfO3tJFKL-y1Pr6OHqDDafZHA&usqp=CAU",name:"SUNGLASSES"},
+{img:"https://m.media-amazon.com/images/I/71QFQa8IqaL._AC_UL320_.jpg",name:"SHOES"},
+{img:"https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-410,/pub/media/catalog/product/f/b/fb9564c2FD22005W01WHITE_1.jpg?rnd=20200526195200",name:"MENS SNEAKERS"},
+{img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjx-VDV2z4_G9j8bovnR04vhobcN1Qiarzpg&usqp=CAU",name:"MENS T-SHIRT"},
+{img:"https://m.media-amazon.com/images/I/61P4gSmnEoL._UY550_.jpg",name:"WOMENS TOPS"},
+{img:"https://5.imimg.com/data5/TB/GW/MY-46513884/womens-jeans-500x500.jpeg",name:"WOMENS DENIM"},
+{img:"https://www.landmarkjewelersltd.com/wp-content/uploads/2018/05/48777.jpg",name:"JEWELRY"},
+
+];
+arr.forEach(function(elem){
+    let div=document.createElement("div");
+    let img=document.createElement("img");
+    img.src=elem.img;
+    let p=document.createElement("p");
+    p.innerText=elem.name;
+    div.append(img,p);
+    document.querySelector("#shop-by-category").append(div)
+})
+
+</script>
+<!--  creating 3rs script for 2nd slider in middle section(IMPORTANT SECTION)-->
+<script>
+    let sliderlink=["https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c2xpZGVyJTIwc2hvcHBpbmclMjBpbWFnZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60","https://img.freepik.com/free-photo/full-length-portrait-happy-excited-girl-bright-colorful-clothes-holding-shopping-bags-while-standing-showing-peace-gesture-isolated_231208-5946.jpg?w=996&t=st=1658309772~exp=1658310372~hmac=041dfeacaa2a3a9bf0fca968376f34a40582d814bea7a11b5c864ff7e8f96fc5",
+    "https://img.freepik.com/free-photo/beautiful-smiling-young-blonde-woman-pointing-sunglasses-holding-shopping-bags-credit-card-pink-wall_496169-1506.jpg?t=st=1658308042~exp=1658308642~hmac=453280a2e6227c4277461d3bea6715ddc4f622d685a6b9ad2c67f7028e81afb6&w=996",
+    "https://img.freepik.com/premium-photo/cheerful-indian-family-shopping-diwali-festival-wedding-showing-colourful-paper-bags-isolated-white_466689-13131.jpg?w=996"];
+
+let slidertopdata=["BOTTEGA VENETA","FENDI","GUCCI","POLO",]
+
+let right=document.querySelector("#right1");
+let slider2=document.querySelector("#imgslider");
+let inner=document.querySelector("#mid-sli-h");
+let state=0;
+right.addEventListener("click",function(){
+ 
+state++
+    if(state===sliderlink.length){
+        state=0;
+    }
+ 
+    slider2.src=sliderlink[state];
+    inner.innerText=slidertopdata[state];
+    if(inner.innerText==="FENDI"||inner.innerText==="POLO"||inner.innerText==="GUCCI"){
+        document.querySelector("#mid-sli-h").style.marginLeft="200px"
+    }else{
+        document.querySelector("#mid-sli-h").style.marginLeft="0px"
+
+    }
+})
+let left=document.querySelector("#left1");
+left.addEventListener("click",function(){
+    
+    state--;
+    if(state<0){
+        state=sliderlink.length-1;
+    }
+ 
+    slider2.src=sliderlink[state];
+    inner.innerText=slidertopdata[state];
+    if(inner.innerText==="FENDI"||inner.innerText==="POLO"||inner.innerText==="GUCCI"){
+        document.querySelector("#mid-sli-h").style.marginLeft="200px"
+    }else{
+        document.querySelector("#mid-sli-h").style.marginLeft="0px"
+
+    }
+})
+// for automatic moving of images in slider
+
+function second(){
+
+slider2.src=sliderlink[1]
+document.querySelector("#mid-sli-h").innerText="FENDI";
+document.querySelector("#mid-sli-h").style.marginLeft="200px"
+}
+
+function third(){
+
+slider2.src=sliderlink[2];
+document.querySelector("#mid-sli-h").innerText="GUCCI";
+document.querySelector("#mid-sli-h").style.marginLeft="200px"
+
+}
+function fourth(){
+    slider2.src=sliderlink[3]
+    document.querySelector("#mid-sli-h").innerText="POLO";
+document.querySelector("#mid-sli-h").style.marginLeft="200px"
+
+}
+function first(){
+    document.querySelector("#mid-sli-h").innerText="BOTTEGA VENETA";
+    document.querySelector("#mid-sli-h").style.marginLeft="0px"
+slider2.src=sliderlink[0]
+}
+
+setInterval(second,2000)
+setInterval(third,4000)
+setInterval(fourth,6000)
+setInterval(first,8000)
+
+</script>
+<!-- 6 div creation for new arrival by js -->
+<script>
+    let arrivalarr=[{img:"https://m.media-amazon.com/images/I/51AUgMXuHnL._UX342_.jpg",name:"DIVA! T-SHIRT",price:"$660",price1:"from $415.23",dis:"Save 37%"},
+    {img:"https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/productimage/2020/10/20/dc3d680e-0729-498f-8956-656b14e6e4641603152433249-1.jpg",name:"LA MEDUSA RUBBER MULES",price:"$468",price1:"from $355.53",dis:"Save 24%"},
+    {img:"https://m.media-amazon.com/images/I/71vRykoHKKL._UY535_.jpg",name:"THE FLUORO MOTTO SHOT BAG",price:"$468",price1:"from $331.39",dis:"Save 29%"},
+    {img:"https://assets.ajio.com/medias/sys_master/root/20210923/BIod/614c3c38f997ddce89db1ec7/puma_grey_cross_wn%27s_idp_textured_lace-up_shoes.jpg",name:"OPEN FOR A CHANGE BIO-BASED SNEAKERS",price:"$624",price1:"from $488.67",dis:"Save 22%"},
+    {img:"https://footwearnews.com/wp-content/uploads/2021/08/on-cloudflyer-2.jpg?w=700&h=437&crop=1",name:"#USE THE EXISTING    SNEAKERS",price:"$594",price1:"from $438.78",dis:"Save 26%"}
+   ]
+    arrivalarr.forEach(function(elem){
+        let div=document.createElement("div");
+    let img=document.createElement("img");
+    img.src=elem.img;
+    let p=document.createElement("p");
+    p.innerText=elem.name;
+    let h1=document.createElement("h4");
+    h1.innerText=elem.price;
+
+    let h3=document.createElement("h4");
+    h3.innerText=elem.price1
+    let h2=document.createElement("h4");
+    h2.innerText=elem.dis;
+    h2.style.color="red"
+    div.append(img,p,h1,h3,h2);
+    document.querySelector("#new-arrival-section").append(div)
+
+    })
+</script>
+<!-- trending now 10 divs creation by js -->
+<script>
+     let trendingarr=[{img:"https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/productimage/2019/11/13/daf88f27-d803-4dff-b62b-1a015faa5a131573666334575-1.jpg",name:"DIVA! T-SHIRT",price:"$660",price1:"from $415.23",dis:"Save 37%"},
+    {img:"https://images-eu.ssl-images-amazon.com/images/I/81iiPvmfJvL._AC._SR360,460.jpg",name:"LA MEDUSA RUBBER MULES",price:"$468",price1:"from $355.53",dis:"Save 24%"},
+    {img:"https://images.dsw.com/is/image/DSWShoes/505845_950_ss_01?impolicy=qlt-medium&imwidth=800&imdensity=1",name:"THE FLUORO MOTTO SHOT BAG",price:"$468",price1:"from $331.39",dis:"Save 29%"},
+    {img:"https://curvissa.scene7.com/is/image/OttoUK/300w/LASCANA-Stretchy-Over-Knee-Boots~52505456FRSC.jpg",name:"OPEN FOR A CHANGE BIO-BASED SNEAKERS",price:"$624",price1:"from $488.67",dis:"Save 22%"},
+    {img:"https://m.media-amazon.com/images/I/71qxTNiq+US._UY500_.jpg",name:"#USE THE EXISTING    SNEAKERS",price:"$594",price1:"from $438.78",dis:"Save 26%"},
+    {img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtdArlfY74TnEAiKQQDJI00FWPrlKkoCRqgw&usqp=CAU",name:"DIVA! T-SHIRT",price:"$660",price1:"from $415.23",dis:"Save 37%"},
+    {img:"https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1633597838-874597_BLACK1_5.jpg?crop=1xw:1xh;center,top&resize=480:*",name:"LA MEDUSA RUBBER MULES",price:"$468",price1:"from $355.53",dis:"Save 24%"},
+    {img:"https://m.media-amazon.com/images/I/71vRykoHKKL._UY535_.jpg",name:"THE FLUORO MOTTO SHOT BAG",price:"$468",price1:"from $331.39",dis:"Save 29%"},
+    {img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8tmywLzj7kQ_vnAXJwGNq5hCdRXkJh6tfIA&usqp=CAU",name:"OPEN FOR A CHANGE BIO-BASED SNEAKERS",price:"$624",price1:"from $488.67",dis:"Save 22%"},
+    {img:"https://footwearnews.com/wp-content/uploads/2021/08/on-cloudflyer-2.jpg?w=700&h=437&crop=1",name:"#USE THE EXISTING    SNEAKERS",price:"$594",price1:"from $438.78",dis:"Save 26%"}
+   ]
+    trendingarr.forEach(function(elem){
+        let div=document.createElement("div");
+    let img=document.createElement("img");
+    img.src=elem.img;
+    let p=document.createElement("p");
+    p.innerText=elem.name;
+    let h1=document.createElement("h4");
+    h1.innerText=elem.price;
+
+    let h3=document.createElement("h4");
+    h3.innerText=elem.price1
+    let h2=document.createElement("h4");
+    h2.innerText=elem.dis;
+    h2.style.color="red"
+    div.append(img,p,h1,h3,h2);
+    document.querySelector("#trending-section").append(div)
+
+    })
+    let btn=document.createElement("button");
+    btn.innerText="VIEW ALL"
+    document.querySelector("#trending-btn").append(btn)
 </script>
 
 </html>
