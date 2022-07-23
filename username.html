@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#first-h1{
+   
+text-align: center;
+font-size: 38px;
+font-weight: lighter;
+margin-top: 150px;
+}
+
+button{
+    display: block;
+    margin: auto;
+    width:130px;
+    height:37px;
+    background-color: white;
+    border:1px solid rgb(229, 219, 219);
+    font-size: 18px;
+}
+div>h1{
+    font-size:32px;
+    font-weight: lighter;
+    margin-top: -90px;
+}
+#logo{
+    width:200px;
+    height:45px;
+    margin: auto;
+}
+#logo>img{
+    width:200px;
+    height:45px;
+    background-color: white;
+}
+#name{
+    margin-top: 5px;
+}
+    </style>
+</head>
+<body>
+    <div id="logo"><img src="https://s35545.pcdn.co/wp-content/uploads/2020/12/bluefly-logo-768x118.png"></div>
+    <h1 id="first-h1">MY ACCOUNT</h1>
+      
+   <button id="logout">LOG OUT</button>
+   
+
+    <div>
+        <h1>ACCOUNT DETAILS</h1>
+        
+<h1 id="name"></h1>
+    </div>
+  
+
+
+</body>
+
+<script>
+    let namecomes=JSON.parse(localStorage.getItem("name"))
+    document.querySelector("#name").innerText=namecomes;
+document.querySelector("#logout").addEventListener("click",function(){
+    window.location.href="login.html"
+ 
+    localStorage.setItem("name",JSON.stringify(""))
+})
+</script>
+</html>
+

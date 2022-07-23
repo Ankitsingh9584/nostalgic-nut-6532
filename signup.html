@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#page{
+    width:480px;
+
+    height: 700px;
+margin: auto;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+div>h1{
+    text-align: center;
+  
+    margin-bottom: 60px;
+    padding-top: 25px;
+  
+}
+div>input{
+    width: 80%;
+    height:35px;
+    margin: auto;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+div>button{
+    width: 80%;
+    height:43px;
+    margin: auto;
+    margin-top: 0px;
+    margin-left: 40px;
+}
+div>p{
+    margin-left: 40px;
+}
+
+
+.btn-color{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    margin-top: -8px;
+}
+#check-box{
+    margin-left: 20px;
+    width:16px;
+    height:12px;
+    display: inline;
+    margin-bottom: 38px;
+    margin-left: 40px;
+}
+#logo{
+    width:200px;
+    height:45px;
+    margin: auto;
+}
+#logo>img{
+    width:200px;
+    height:45px;
+    background-color: white;
+}
+    </style>
+</head>
+<body>
+    <div id="logo"><img src="https://s35545.pcdn.co/wp-content/uploads/2020/12/bluefly-logo-768x118.png"></div>
+   <form>
+
+    <div id="page">
+        <h1>CREATE ACCOUNT</h1>
+        <p style="font-size: 14px;">FIRST NAME</p>
+        
+        <input id="name"  type="text">
+        <p style="font-size:14px">LAST NAME</p>
+        <input type="text">
+        <p  style="font-size:14px">EMAIL</p>
+        <input id="email" style="display:block;" type="email">
+        <p  style="display:inline ;margin-right: 203px;font-size: 14px;">PASSWORD</p>
+        
+        <input id="password" style="display:block;margin-top: 10px;"type="password"><br>
+        <input  id="check-box" type="checkbox"  >
+        <p style="display: inline;" >Subscribe to stay updated with new offers!</p>
+       
+        <button class="btn-color">CREATE</button><br>
+        <button id="redirect-to-login" style="margin-top:20px;background-color:white;border:0.3px solid rgb(215, 207, 207)">If Account Created click here for login</button>
+        
+
+    </div>
+   </form>
+
+</body>
+<!-- event listener for create account and saving data to local storage -->
+<script>
+    document.querySelector(".btn-color").addEventListener("click",signup)
+  
+    
+    let arr=JSON.parse(localStorage.getItem("signup-data"))||[];
+    
+
+    function signup(){
+        event.preventDefault();
+     let obj={
+        email:document.querySelector("#email").value,
+        pass:document.querySelector("#password").value,
+        name:document.querySelector("#name").value,
+     }
+    //  for checking email/account already exist or not in local storage
+     let email11=document.querySelector("#email").value;
+     let b=false;
+     arr.forEach(function(elem) {
+    if(elem.email===email11){
+        alert("Email Already Exist")
+        b=true;
+    }
+
+    
+});
+// if email not exist then we saved in local storage
+if(b===false){
+if(document.querySelector("#email").value===""||document.querySelector("#password").value===""||document.querySelector("#name").value===""){
+    alert("FirstName,Email & Password Can't be empty")
+}
+else{
+arr.push(obj);
+localStorage.setItem("signup-data",JSON.stringify(arr));
+    
+}}
+
+    }
+    document.querySelector("#redirect-to-login").addEventListener("click",function(){
+    event.preventDefault();
+    window.location.href="login.html"
+})
+</script>
+</html>

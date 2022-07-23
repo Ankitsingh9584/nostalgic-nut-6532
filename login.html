@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+#page{
+    width:400px;
+
+    height: 400px;
+margin: auto;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+div>h1{
+    text-align: center;
+    padding-top: 25px;
+}
+div>input{
+    width: 88%;
+    height:35px;
+    margin: auto;
+    margin-bottom: 20px;
+
+}
+div>button{
+    width: 90%;
+    height:43px;
+  margin-left:20px ;
+    margin-top: 0px;
+
+}
+
+#btn{
+    margin-top: 15px;
+    background-color: white;
+    border: 0px;
+    font-size: 16px;
+}
+.btn-color{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    margin-top: -8px;
+}
+#logo{
+    width:200px;
+    height:45px;
+    margin: auto;
+}
+#logo>img{
+    width:200px;
+    height:45px;
+    background-color: white;
+}
+    </style>
+</head>
+<body>
+   <form>
+    <div id="logo"><img src="https://s35545.pcdn.co/wp-content/uploads/2020/12/bluefly-logo-768x118.png"></div>
+    <div id="page">
+        <h1>LOGIN</h1>
+        <p style="font-size:14px;margin-left: 20px;">EMAIL</p>
+        <input id="email" style="display:block;" type="email">
+        <p  style="display:inline ;margin-right: 163px;margin-left: 20px;font-size: 14px;">PASSWORD</p>
+        <P style="display:inline">Forgot password$</P>
+        <input id="password"  style="display:block"type="password"><br>
+        <button id="sign" class="btn-color">SIGN IN</button><br>
+        <button id="btn">Create account</button>
+
+    </div>
+   </form>
+
+</body>
+<!-- event listener for create account -->
+<script>
+    document.querySelector("#btn").addEventListener("click",function(){
+        event.preventDefault();
+       
+        window.location.href="signup.html"
+    })
+</script>
+<!-- gettting data from signup local storage -->
+<script>
+    let getdata=JSON.parse(localStorage.getItem("signup-data"))||[];
+   
+    document.querySelector("#sign").addEventListener("click",function(){
+        event.preventDefault();
+        let getemail=document.querySelector("#email").value;
+    let getpass=document.querySelector("#password").value;
+    // for email & password field not to be empty
+if(getemail===""||getpass===""){
+    alert("Please Fill Email & Password")
+}
+// if email & password not empty 
+else{
+    let a=false;
+    getdata.forEach(function(elem) {
+
+        if(elem.email===getemail&&elem.pass===getpass){
+           alert("Login Successfull")
+            a=true;
+            localStorage.setItem("name",JSON.stringify(elem.name))
+        }
+    });
+    if(a){
+     
+        window.location.href="homepage.html"
+    }
+    else{
+        alert("Wrong email or Password")
+    }
+}
+})
+
+</script>
+
+</html>

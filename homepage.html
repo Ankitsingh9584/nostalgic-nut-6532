@@ -18,7 +18,7 @@
       
     }
     #sticky{
-        position: -webkit-sticky;
+    
       position: sticky;
       top:00px;
       z-index: 1000;
@@ -74,6 +74,7 @@ width:80px;
 height:35px;
 width:20%
 }
+
 #options{
     display: grid;
     grid-template-columns: repeat(9,1fr);
@@ -84,6 +85,7 @@ width:20%
 
     
 }
+
 #options>div{
     font-size: 16px;
     width:200%;
@@ -596,8 +598,14 @@ font-weight: lighter;
 }
 #last-footer>div:nth-child(3){
     margin-top: 50px;
+   
  
 }
+.row-size>td{
+font-size: 17px;
+font-weight: lighter;
+}
+
 table {
 border-collapse: collapse;
 border-collapse: separate;
@@ -608,7 +616,7 @@ td{
     font-weight: lighter;
 }
 .pfontsize{
-    font-size: 19px;
+    font-size: 18px;
     font-weight: lighter;
 }
 .remove-border{
@@ -656,7 +664,7 @@ margin-right: 50px;
     color: rgb(107, 103, 103);
 }
 
-/* shoes */
+/* append shoes */
 #append-shoes{
 
     position: sticky;
@@ -719,7 +727,7 @@ margin-right: 50px;
 }
 
 /* small screen media querries */
-@media all and (min-width:481px) and (max-width:988px){
+@media all and (min-width:581px) and (max-width:988px){
     #discount{
     display: grid;
  
@@ -728,14 +736,28 @@ margin-right: 50px;
     margin-top: 21px;
    
 }
+body{
+    margin: auto;
+}
+#search-logo{
+  margin-left: 200px;
+}
+#options>div>button{
+font-size: 0px;
+}
+#crouser{
+    width:auto
+}
 #discount>div{
     margin: auto;
 }
 #crouser>p{
-    top:220px
+    top:220px;
+    left:50px
 }
 #crouser>h1{
-    top:40px
+    top:120px;
+    left:100px
 }
 #crouser>button:nth-child(4){
     top:320px
@@ -770,35 +792,54 @@ font-size: 0px;
 }
 #footer-div{
     display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(1,auto);
-  
+    grid-template-columns: repeat(1,100%);
+    grid-template-rows: repeat(3,auto);
+
 }
 #footer-div>div{
 margin: auto;
 margin-top: 15px;
-margin-left: 40px;
+
+}
+#footer-div>div>h2 {
+    font-size: 18px;
+   
+}
+#mid-slider>h1 {
+    left:100px
+}
+#mid-slider>p {
+    left:70px
 }
 }
 /* small screen media querries */
-@media all and (min-width:200px) and (max-width:480px){
+@media all and (min-width:200px) and (max-width:580px){
     
     #discount{
     display: grid;
  
     grid-template-columns: repeat(1,100%);
     grid-template-rows: repeat(3,500px);
+ 
     margin-top: 10px;
    
 }
+#options>div>button{
+font-size: 0px;
+}
+
 #discount>div{
- margin-left: 50px;
+  
+
+ margin-left: 190px;
 }
 #crouser>p{
-    top:220px
+    top:220px;
+    left:50px
 }
 #crouser>h1{
-    top:40px
+    top:120px;
+    left:100px
 }
 #crouser>button:nth-child(4){
     top:320px
@@ -829,12 +870,12 @@ margin-left: 40px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(3,auto);
-    
+    margin-left: 100px;
    
 }
 #trendinh1{
     width:350px;
-    margin-left: 110px;
+    margin-left: 180px;
 }
 #trending-btn{
     width: 120px;
@@ -844,16 +885,28 @@ margin-left: 40px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(5,auto);
- 
+ margin-left:100px;
 }
+#search-logo{
+    width: 0px;
+    height: 0px;
+    margin-left: 250px;
+}
+
 #mid-slider{
-    width:160%;
+    width:170%;
+}
+#mid-slider>h1 {
+    left:100px
+}
+#mid-slider>p {
+    left:70px
 }
 #crouser{
-    width:160%;
+    width:170%;
 }
 #heading{
-    width:160%
+    width:170%
 }
 #options>div{
 font-size: 0px;
@@ -861,23 +914,46 @@ font-size: 0px;
 #options{
     margin-top: -20px;
 }
+#footer-div{
+    display: grid;
+    grid-template-columns: repeat(1,100%);
+    grid-template-rows: repeat(3,auto);
+
 }
+#footer-div>div{
+margin: auto;
+margin-top: 15px;
+margin-left: 150px;
+}
+#footer-div>div>h2 {
+    font-size: 18px;
+   
+}
+#last-footer{
+    width:170%
+}
+}
+
 </style>
 
 
 
 </head>
 <body>
+
   <div id="sticky">
 <div id="top-section">
     <div id="logo">
         <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?v=1574278243"/>
         </div>
+   
     <div id="search-logo">  <img id="search-logo1" src="https://media.istockphoto.com/vectors/magnifying-glass-icon-vector-id924437708?b=1&k=20&m=924437708&s=170667a&w=0&h=fkjAvqHqCZ1Cb8tRv2xDbxAzvtp5HnJTXMFPpfxYFVs="/>
-        <img src="data:image/png;base64,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"/>
+        
+        <img id="login-and-signup" src="https://thumbs.dreamstime.com/b/person-icon-line-style-man-symbol-isolated-white-background-simple-avatar-abstract-black-user-sign-flat-vector-illustration-143908179.jpg"/>
         <img src="data:image/png;base64,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"/>
     </div> 
     </div>
+    
     <div id="options"> 
         <div ><button id="clothing" class="remove-border">CLOTHING</button></div>
         <div><button id="shoes" class="remove-border">SHOES</button></div>
@@ -891,6 +967,7 @@ font-size: 0px;
     </div>
 </div>
 </div>
+
 <!-- appended div for showing clothing categories -->
 <div id="append-clothing">
 
@@ -996,7 +1073,7 @@ font-size: 0px;
     <tr class="row-size"><td>Shipping & Returns</td></tr>
     <tr class="row-size"><td>Pre-Owned Guide</td></tr>
 </table></div>
-<!-- 2nd table -->
+<!--last footer 2nd table -->
 <div>
 <table>
 
@@ -1005,7 +1082,7 @@ font-size: 0px;
     <tr class="row-size"><td>Terms & Conditions</td></tr>
     <tr class="row-size"><td>Do Not Sell My Personal Information</td></tr>
 </table></div>
-<!-- 3rd table -->
+<!--last footer 3rd table -->
 <div>
     <table>
         <p class="pfontsize">SIGN UP AND SAVE</p>
@@ -1028,7 +1105,7 @@ src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/Untitled_2_.png_5_x1
 </body>
 
 
-<!-- adding event listener clothing,shoes etc -->
+<!-- adding event listener clothing  -->
 <script>
     
     document.getElementById("clothing").addEventListener("click",function(){
@@ -1081,7 +1158,7 @@ div3.setAttribute("id","clothingthirddiv")
       let ul14=document.createElement("ul");
       ul14.innerText="Jumpsuits & Rampers";
       let ul15=document.createElement("ul");
-      ul15.innerText="Lingerie & Hoseing";
+      ul15.innerText="Polo Shirts";
       let ul16=document.createElement("ul");
       ul16.innerText="Loungewear & Sleepwear";
       let ul17=document.createElement("ul");
@@ -1089,9 +1166,9 @@ div3.setAttribute("id","clothingthirddiv")
       let ul18=document.createElement("ul");
       ul18.innerText="Shorts";
       let ul19=document.createElement("ul");
-      ul19.innerText="Skirts";
+      ul19.innerText="Swimwear";
       let ul20=document.createElement("ul");
-      ul20.innerText="Tops & Tees";
+      ul20.innerText="Sweatshirts & Hoddies";
 
       div.append(img,h4,p);
       div2.append(h42,ul1,ul2,ul3,ul4,ul5,ul6,ul7,ul8,ul9,ul10)
@@ -1137,7 +1214,7 @@ div3.setAttribute("id","clothingthirddiv")
       let ul4=document.createElement("ul");
       ul4.innerText="Jumpsuits & Rampers";
       let ul5=document.createElement("ul");
-      ul5.innerText="Lingerie & Hoseing";
+      ul5.innerText="Boots Cloe";
       let ul6=document.createElement("ul");
       ul6.innerText="Loungewear & Sleepwear";
       let ul7=document.createElement("ul");
@@ -1162,7 +1239,7 @@ div3.setAttribute("id","clothingthirddiv")
       let ul24=document.createElement("ul");
       ul24.innerText="Jumpsuits & Rampers";
       let ul25=document.createElement("ul");
-      ul25.innerText="Lingerie & Hoseing";
+      ul25.innerText="Boots Cloe";
       let ul26=document.createElement("ul");
       ul26.innerText="Loungewear & Sleepwear";
       let ul27=document.createElement("ul");
@@ -1187,7 +1264,7 @@ let div3=  document.createElement("div");
       let ul14=document.createElement("ul");
       ul14.innerText="Jumpsuits & Rampers";
       let ul15=document.createElement("ul");
-      ul15.innerText="Lingerie & Hoseing";
+      ul15.innerText="Boots Cloe";
       let ul16=document.createElement("ul");
       ul16.innerText="Loungewear & Sleepwear";
       let ul17=document.createElement("ul");
@@ -1211,17 +1288,17 @@ let div5=  document.createElement("div");
       let ul44=document.createElement("ul");
       ul44.innerText="Jumpsuits & Rampers";
       let ul45=document.createElement("ul");
-      ul45.innerText="Lingerie & Hoseing";
+      ul45.innerText="Boots Cloe";
       let ul46=document.createElement("ul");
       ul46.innerText="Loungewear & Sleepwear";
       let ul47=document.createElement("ul");
       ul47.innerText="Pants & Leggine";
       let ul48=document.createElement("ul");
-      ul48.innerText="Shorts";
+      ul48.innerText="Loafers";
       let ul49=document.createElement("ul");
-      ul49.innerText="Skirts";
+      ul49.innerText="Gucci";
       let ul50=document.createElement("ul");
-      ul50.innerText="Tops & Tees";
+      ul50.innerText="Prada";
 
       let div6=  document.createElement("div");
       let img2=document.createElement("img");
@@ -1478,6 +1555,26 @@ setInterval(first,8000)
     let btn=document.createElement("button");
     btn.innerText="VIEW ALL"
     document.querySelector("#trending-btn").append(btn)
+</script>
+<!-- adding event listener for login and signup -->
+<script>
+    document.querySelector("#login-and-signup").addEventListener("click",function(){
+      window.location.href="login.html"
+    })
+</script>
+<!-- for displaying name after login -->
+<script>
+    let name=JSON.parse(localStorage.getItem("name"))
+    console.log(name)
+    if(name!==""){
+      
+       
+        document.querySelector("#login-and-signup").addEventListener("click",function(){
+         window.location.href="username.html"
+
+    })
+
+    }
 </script>
 
 </html>
