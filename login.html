@@ -91,9 +91,15 @@ div>button{
         event.preventDefault();
         let getemail=document.querySelector("#email").value;
     let getpass=document.querySelector("#password").value;
-
+    // for email & password field not to be empty
+if(getemail===""||getpass===""){
+    alert("Please Fill Email & Password")
+}
+// if email & password not empty 
+else{
     let a=false;
     getdata.forEach(function(elem) {
+
         if(elem.email===getemail&&elem.pass===getpass){
            alert("Login Successfull")
             a=true;
@@ -107,8 +113,9 @@ div>button{
     else{
         alert("Wrong email or Password")
     }
-
+}
 })
+
 </script>
 
 </html>

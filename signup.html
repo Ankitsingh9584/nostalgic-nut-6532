@@ -97,9 +97,10 @@ div>p{
 <!-- event listener for create account and saving data to local storage -->
 <script>
     document.querySelector(".btn-color").addEventListener("click",signup)
-
+  
+    
     let arr=JSON.parse(localStorage.getItem("signup-data"))||[];
-
+    
 
     function signup(){
         event.preventDefault();
@@ -108,7 +109,19 @@ div>p{
         pass:document.querySelector("#password").value,
         name:document.querySelector("#name").value,
      }
+    //  for checking email/account already exist or not in local storage
+     let email11=document.querySelector("#email").value;
+     let b=false;
+     arr.forEach(function(elem) {
+    if(elem.email===email11){
+        alert("Email Already Exist")
+        b=true;
+    }
 
+    
+});
+// if email not exist then we saved in local storage
+if(b===false){
 if(document.querySelector("#email").value===""||document.querySelector("#password").value===""||document.querySelector("#name").value===""){
     alert("FirstName,Email & Password Can't be empty")
 }
@@ -117,7 +130,9 @@ arr.push(obj);
 localStorage.setItem("signup-data",JSON.stringify(arr));
     
 }}
-document.querySelector("#redirect-to-login").addEventListener("click",function(){
+
+    }
+    document.querySelector("#redirect-to-login").addEventListener("click",function(){
     event.preventDefault();
     window.location.href="login.html"
 })
